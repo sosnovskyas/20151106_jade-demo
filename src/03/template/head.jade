@@ -1,0 +1,30 @@
+head
+   meta(charset='utf-8')
+   meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+   meta(http-equiv='X-UA-Compatible', content='IE=edge')
+   meta(name='viewport', content='width=device-width')
+
+   // SEO
+   title
+      block title
+
+   meta(name='description', content='Sosnovsky Alexey')
+   meta(name='keywords', content='front end portfolio')
+   meta(name='author', content='Sosnovsky Alexey')
+
+   // CSS
+   link(rel='stylesheet', href='custom.css')
+   script(src='modernizr.js')
+
+   // поддержка старых IE
+   <!--[if IE 8]>
+   <!--<![endif]-->
+   // favicon
+   link(rel='shortcut icon', href='/i/favicon.ico', type='image/x-icon')
+   link(rel='icon', href='/i/favicon.ico', type='image/x-icon')
+
+   style
+      include main.css
+   script.
+      :coffee-script
+         console.log 'All JSTransformers can be used as jade filters. Popular filters include :coffee-script, :babel, :uglify-js, :less, and :markdown-it.'

@@ -1,0 +1,5 @@
+mixin insert_list(header, items)
+  .list__header= header
+  ul.list_list
+    each item, index in items
+      li.list__item= '('+ index+') - ' + item

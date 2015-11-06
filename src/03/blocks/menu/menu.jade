@@ -1,0 +1,8 @@
+style
+  include menu.css
+
+nav
+  ul
+  - pages = ['ПЕРВАЯ СУПЕРПАГА','ВТОРАЯ СУПЕРПАГА','ТРЕТЬЯ СУПЕРПАГА']
+  each page, num in pages
+    li.menu__item: a(href="extreme" + (num+1) + '.html', class=(currentPage == (num+1) ? ' active' : ''))= page

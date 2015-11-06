@@ -1,0 +1,13 @@
+extends ../template/layout
+
+block prepend menu
+  - var currentPage = 1
+
+block title
+  | ЭКСТРЕМАЛЬНО КРУТАЯ ПАГА ;)
+
+block content
+  .content
+    .content__header ЭКСТРЕМАЛЬНО КРУТАЯ СУПЕРПАГА НОМЕР ОДИН
+  - var cats = ['gray','red','white']
+  +insert_list("у нас во дворе есть коты! вот они:", cats)

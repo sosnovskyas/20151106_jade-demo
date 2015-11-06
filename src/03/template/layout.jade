@@ -1,0 +1,12 @@
+include mixins
+doctype html
+include head
+body.body
+  include ../blocks/header/header
+  block menu
+    include ../blocks/menu/menu
+
+  - var pagePosition = "content"
+  include ../blocks/sticker/sticker
+  block content
+  include ../blocks/footer/footer

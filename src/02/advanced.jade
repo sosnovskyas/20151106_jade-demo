@@ -1,0 +1,76 @@
+doctype html
+head
+   title
+    | advanced
+
+   style .header { color: royalblue }
+
+   style
+    | .article { color: green }
+
+   style.
+     .clearfix:before, .clearfix:after {
+       content: "";
+       display: block;
+     }
+     .clearfix:after {
+       clear: both;
+     }
+   script.
+     function check_touch(){
+        alert('PUSHED');
+     }
+
+body
+  header.header: h1 ADVANCED
+  article.article
+    .pimpa(onclick="check_touch()") ПИМПА
+    h2 article
+    p.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in ex vitae dolor dapibus auctor eu nec sem.
+    .clearfix
+      p(style={color: 'white',background: 'black',float: 'left',width: '150px'}).
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in ex vitae dolor dapibus auctor eu nec sem.
+
+      p(
+        style={
+          color: 'white',
+          background: 'black',
+          float: 'right',
+          width: '150px'
+       }
+      ).
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in ex vitae dolor dapibus auctor eu nec sem.
+
+  h2 variables, circles ...
+
+  - var name = 'variable'
+  ul
+    - for (var x = 0; x < 5; x++)
+      - var rnd = Math.floor(Math.random() * (2 - 0) + 0)
+      li= 'its ' + x + ' number ' + name + ' random = ' + rnd
+      if rnd
+        li aditional for random = 1
+    li -----------
+    li тут что то руками впишем
+    li -----------
+    - list = ["первый", "второй","с половиной","и одна треть","и ещё чуть чуть", "третий", "четвёртый"]
+    each item, num in list
+      case item
+        when "первый"
+          li= num + '-index ' + item + ' - начало'
+        when "четвёртый"
+          li= num + '-index ' + item + ' - конец'
+        default
+          li= num + '-index ' + item + ' - середина'
+    li -----------
+    each val, index in {1:'one',2:'two',3:'three'}
+      li= index + ': ' + val
+    li -----------
+    - list2 = ['гусь','утка',9,'ёж']
+    each item in list2
+      li= item
+
+
+  footer.footer
+    .footer__text footer

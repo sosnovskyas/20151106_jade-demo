@@ -1,0 +1,12 @@
+extends ../template/layout
+
+block prepend menu
+  - var currentPage = 3
+block title
+  | ЭКСТРЕМАЛЬНО КРУТАЯ ПАГА ;)
+
+block content
+  .content
+    .content__header ЭКСТРЕМАЛЬНО КРУТАЯ СУПЕРПАГА НОМЕР ТРИ
+  - var random = {3:'чупакабра',8:'нэсси',15:'етти',21:'барсик'}
+  +insert_list("время час ночи поэтому напишу всякой хрени в стиле - конь, стул, двадцать восемь:", random)

@@ -1,0 +1,13 @@
+style
+   include sticker.css
+
+case pagePosition
+  when "footer"
+    - sticker__text = "я стикер, я в подвале и жёлтый"
+  when "header"
+    - sticker__text = "я стикер, я в бошке и зелёный"
+  default
+    - sticker__text = "привет, я стикер, непонятный вышел день :( не могу понять где я, но точно не в подвале и не в бошке"
+
+.sticker(class=("sticker__" + pagePosition))
+   .sticker__text= sticker__text

@@ -1,0 +1,12 @@
+extends ../template/layout
+
+block prepend menu
+  - var currentPage = 2
+block title
+  | ЭКСТРЕМАЛЬНО КРУТАЯ ПАГА ;)
+
+block content
+  .content
+    .content__header ЭКСТРЕМАЛЬНО КРУТАЯ СУПЕРПАГА НОМЕР ДВА
+  - var tecs = ['jade','scss','coffe']
+  +insert_list("для разработки мы сипользуем следующий стек технологий:", tecs)

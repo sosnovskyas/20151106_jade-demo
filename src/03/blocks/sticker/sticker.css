@@ -1,0 +1,11 @@
+.sticker{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+.sticker__footer{
+    background: yellow;
+}
+.sticker__header{
+    background: green;
+}

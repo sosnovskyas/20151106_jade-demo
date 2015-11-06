@@ -1,0 +1,16 @@
+.footer__top{
+    text-align: center;
+    background: aquamarine;
+}
+.footer__bottom{
+    text-align: center;
+    background: cornflowerblue;
+}
+.footer__bottom_left{
+    float: left;
+    background: #fc8c84;
+}
+.footer__bottom_right{
+    float: right;
+    background: azure;
+}

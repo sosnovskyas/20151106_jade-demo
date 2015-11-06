@@ -1,0 +1,10 @@
+.menu{
+
+}
+
+.menu__item{
+    display: inline-block;
+}
+.menu__item .active{
+    background: red;
+}

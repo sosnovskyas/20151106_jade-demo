@@ -1,0 +1,41 @@
+doctype html
+head
+  title extend
+body
+  h1 EXTENDED
+  h2 it's all about DIVS
+  div It's DIV
+  .my-block And It's
+    .div-in-div#new-div DIV in DIV
+    .div-in-div.div-in-div_one#very-new-div(and-some="parameters")
+      | i can it
+    .div-in-div(class="div-in-div_two")&attributes({'one':'1','two':'2'})
+      | i can it
+      | again
+      | and again
+    .div-in-div(class="div-in-div_three").
+      many many string if you're need.
+      very many strings.
+      and more....
+      and moooooorrrreeeee....
+
+  h2 about tags
+  hi-html5 Buy html4
+    single-tag/
+
+  input(type="checkbox", name="in-one-line", checked=true)
+  input(type="checkbox", name="in-one-line", checked=false)
+  input(
+    type="checkbox",
+    name="in-more-line",
+    checked
+  )
+
+  h2 long-shot
+  ul
+    li
+      a(href="#")
+        img(src="", alt="its so long")
+    li.wow: a(href="#") wow
+    li.yeah: a(href="#").yeah: img(src="", alt="YEAH")
+    li.cool: a(href="#").cool: img#very-cool.cool(src="", alt="COOL", so=cool)
